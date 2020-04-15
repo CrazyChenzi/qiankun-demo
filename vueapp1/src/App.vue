@@ -16,8 +16,8 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component
 export default class HelloWorld extends Vue {
   public jumpToVueapp2About() {
-    console.log('----')
     location.pathname.startsWith('/vueapp2/about')
+    location.replace('/vueapp2/about')
   }
 }
 </script>
